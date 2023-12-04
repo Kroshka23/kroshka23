@@ -1,0 +1,296 @@
+$color-1: #ffffff;
+$color-2: #f63737;
+
+%border-a {
+  height: 1px;
+  width: 90px;
+  background: rgba(217, 217, 217, 1);
+  opacity: 0.3;
+  position: absolute;
+  content: "";
+}
+
+.market {
+  transition: 0.4s linear;
+  &:hover {
+    color: $color-2;
+  }
+  &::before {
+    @extend %border-a;
+    margin-top: -8px;
+    margin-left: 52px;
+
+    transition: 0.4s linear;
+  }
+  &::after {
+    @extend %border-a;
+    margin-top: 35px;
+    margin-left: -134px;
+
+    transition: 0.4s linear;
+  }
+  &:hover::after {
+    background-color: $color-2;
+    margin-left: -60px;
+  }
+  &:hover::before {
+    background-color: $color-2;
+    margin-left: -20px;
+  }
+}
+.wallet {
+  transition: 0.4s linear;
+  &:hover {
+    color: $color-2;
+  }
+  &::before {
+    @extend %border-a;
+    margin-top: -8px;
+    margin-left: 18px;
+
+    transition: 0.4s linear;
+  }
+  &::after {
+    @extend %border-a;
+    margin-top: 35px;
+    margin-left: -107px;
+
+    transition: 0.4s linear;
+  }
+  &:hover::after {
+    background-color: $color-2;
+    margin-left: -60px;
+  }
+  &:hover::before {
+    background-color: $color-2;
+    margin-left: -20px;
+  }
+}
+
+.explorer {
+  transition: 0.4s linear;
+  &:hover {
+    color: $color-2;
+  }
+  &::before {
+    @extend %border-a;
+    margin-top: -8px;
+    margin-left: 18px;
+
+    transition: 0.4s linear;
+  }
+  &::after {
+    @extend %border-a;
+    margin-top: 35px;
+    margin-left: -125px;
+
+    transition: 0.4s linear;
+  }
+  &:hover::after {
+    background-color: $color-2;
+    margin-left: -60px;
+  }
+  &:hover::before {
+    background-color: $color-2;
+    margin-left: -20px;
+  }
+}
+
+.roadmap {
+  transition: 0.4s linear;
+  &:hover {
+    color: $color-2;
+  }
+  &::before {
+    @extend %border-a;
+    margin-top: -8px;
+    margin-left: 35px;
+
+    transition: 0.4s linear;
+  }
+  &::after {
+    @extend %border-a;
+    margin-top: 35px;
+    margin-left: -130px;
+
+    transition: 0.4s linear;
+  }
+  &:hover::after {
+    background-color: $color-2;
+    margin-left: -60px;
+  }
+  &:hover::before {
+    background-color: $color-2;
+    margin-left: -20px;
+  }
+}
+
+.doc {
+  transition: 0.4s linear;
+  &:hover {
+    color: $color-2;
+  }
+  &::before {
+    @extend %border-a;
+    margin-top: -8px;
+    margin-left: 35px;
+
+    transition: 0.4s linear;
+  }
+  &::after {
+    @extend %border-a;
+    margin-top: 35px;
+    margin-left: -150px;
+
+    transition: 0.4s linear;
+  }
+  &:hover::after {
+    background-color: $color-2;
+    margin-left: -60px;
+  }
+  &:hover::before {
+    background-color: $color-2;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 1728px) {
+  %border-a {
+    width: 80px;
+  }
+
+  .market {
+    &::before {
+      margin-left: 40px;
+    }
+    &::after {
+      @extend %border-a;
+      margin-left: -112px;
+    }
+    &:hover::after {
+      margin-left: -67px;
+    }
+    &:hover::before {
+      margin-left: -15px;
+    }
+  }
+
+  .wallet {
+    &::before {
+      margin-left: 14px;
+    }
+    &::after {
+      @extend %border-a;
+      margin-left: -90px;
+    }
+    &:hover::after {
+      margin-left: -50px;
+    }
+    &:hover::before {
+      margin-left: -20px;
+    }
+  }
+
+  .explorer {
+    &::before {
+      margin-left: 12px;
+    }
+    &::after {
+      @extend %border-a;
+      margin-left: -100px;
+    }
+    &:hover::after {
+      margin-left: -47px;
+    }
+    &:hover::before {
+      margin-left: -25px;
+    }
+  }
+
+  .roadmap {
+    &::before {
+      @extend %border-a;
+      margin-left: 32px;
+    }
+    &::after {
+      margin-left: -108px;
+    }
+    &:hover::after {
+      margin-left: -55px;
+    }
+    &:hover::before {
+      margin-left: -25px;
+    }
+  }
+
+  .doc {
+    &::before {
+      margin-left: 35px;
+    }
+    &::after {
+      margin-left: -126px;
+    }
+    &:hover::after {
+      margin-left: -60px;
+    }
+    &:hover::before {
+      margin-left: -10px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .market {
+    &::before {
+      margin-top: -6px;
+      margin-left: 32px;
+      width: 60px;
+    }
+    &::after {
+      margin-top: 28px;
+      margin-left: -90px;
+      width: 60px;
+    }
+    &:hover::after {
+      margin-left: -48px;
+    }
+  }
+  .wallet {
+    &::before {
+      margin-top: -6px;
+      margin-left: 18px;
+      width: 50px;
+    }
+    &:hover::before {
+      margin-left: -27px;
+    }
+    &::after {
+      margin-top: 28px;
+      margin-left: -70px;
+      width: 50px;
+    }
+    &:hover::after {
+      margin-left: -23px;
+    }
+  }
+  .explorer,
+  .roadmap,
+  .doc {
+    &::before {
+      margin-top: -6px;
+      margin-left: 25px;
+      width: 60px;
+    }
+    &:hover::before {
+      margin-left: -27px;
+    }
+    &::after {
+      margin-top: 28px;
+      margin-left: -85px;
+      width: 60px;
+    }
+    &:hover::after {
+      margin-left: -23px;
+    }
+  }
+}
