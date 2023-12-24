@@ -5,37 +5,34 @@ var swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  on: {
-    resize: function () {
-      if (window.innerWidth <= 428) {
-        swiper.params.spaceBetween = 18;
-        swiper.params.slidesPerView = 1;
-        swiper.update();
-      } else if (window.innerWidth <= 768) {
-        swiper.params.spaceBetween = 18;
-        swiper.params.slidesPerView = 2;
-        swiper.update();
-      } else if (window.innerWidth <= 1024) {
-        swiper.params.spaceBetween = 7;
-        swiper.params.slidesPerView = 3;
-        swiper.update();
-      } else if (window.innerWidth <= 1280) {
-        swiper.params.spaceBetween = 8;
-        swiper.params.slidesPerView = 3;
-        swiper.update();
-      } else if (window.innerWidth <= 1440) {
-        swiper.params.spaceBetween = 22;
-        swiper.params.slidesPerView = 3;
-        swiper.update();
-      } else if (window.innerWidth <= 1728) {
-        swiper.params.spaceBetween = 20;
-        swiper.params.slidesPerView = 3;
-        swiper.update();
-      } else {
-        swiper.params.spaceBetween = 30;
-        swiper.params.slidesPerView = 3;
-        swiper.update();
-      }
+  breakpoints: {
+    1728: {
+      spaceBetween: 30,
+      slidesPerView: 3,
+    },
+    1440: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    1280: {
+      spaceBetween: 22,
+      slidesPerView: 3,
+    },
+    1024: {
+      spaceBetween: 8,
+      slidesPerView: 3,
+    },
+    768: {
+      spaceBetween: 7,
+      slidesPerView: 3,
+    },
+    428: {
+      spaceBetween: 18,
+      slidesPerView: 2,
+    },
+    100: {
+      spaceBetween: 18,
+      slidesPerView: 1,
     },
   },
 });
