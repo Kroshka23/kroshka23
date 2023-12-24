@@ -5,7 +5,7 @@ var swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  breakpoints: {
+    breakpoints: {
     1728: {
       spaceBetween: 30,
       slidesPerView: 3,
